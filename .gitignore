@@ -1,5 +1,5 @@
 /*.egg-info
-/dist 
+/dist
 *.pyc
 build/
 *.mp4
@@ -7,3 +7,8 @@ build/
 avp_stream/datasets/eckey.pem
 *.pem
 downloads/
+*.log
+*.logs
+/DerivedData
+/.derivedData-sim
+/.derivedData

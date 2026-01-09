@@ -13,6 +13,14 @@
 				<string>com.googleusercontent.apps.613801329299-jcqrgumln3s9udtomsll5dahcbjcivej</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>Cyberphys Auth</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>cyberphys</string>
+			</array>
+		</dict>
 	</array>
 	
 	<key>NSCameraUsageDescription</key>

@@ -31,6 +31,9 @@ struct ContentView: View {
     @State private var showSettings = false
     @State private var serverReady = false
     @State private var onboardingState: OnboardingState = .mainView
+    @StateObject private var cyberphysAuth = CyberphysAuthManager.shared
+    @AppStorage("dontShowCyberphysAuthPrompt") private var dontShowCyberphysAuthPrompt = false
+    @State private var showCyberphysAuthPrompt = false
     @StateObject private var googleAuthManager = GoogleDriveAuthManager.shared
     @StateObject private var dropboxAuthManager = DropboxAuthManager.shared
     @ObservedObject private var cloudStorageSettings = CloudStorageSettings.shared
@@ -159,6 +162,19 @@ struct ContentView: View {
             }
         }
         .animation(.easeInOut(duration: 0.25), value: onboardingState)
+        .onAppear {
+            if !cyberphysAuth.isAuthenticated && !cyberphysAuth.isRestoringSession && !dontShowCyberphysAuthPrompt {
+                showCyberphysAuthPrompt = true
+            }
+        }
+        .onChange(of: cyberphysAuth.isRestoringSession) { _, isRestoring in
+            if !isRestoring && !cyberphysAuth.isAuthenticated && !dontShowCyberphysAuthPrompt {
+                showCyberphysAuthPrompt = true
+            }
+        }
+        .sheet(isPresented: $showCyberphysAuthPrompt) {
+            CyberphysSignInPromptView(auth: cyberphysAuth)
+        }
     }
     
     private func proceedToImmersiveSpace() {
@@ -227,6 +243,9 @@ struct ContentView: View {
                     .foregroundColor(.white.opacity(0.7))
             }
             .padding(.top, 32)
+
+            CyberphysSessionsCard(auth: cyberphysAuth)
+                .padding(.horizontal, 24)
                 
             // Animated data flow visualization + START button
             HStack(spacing: 10) {

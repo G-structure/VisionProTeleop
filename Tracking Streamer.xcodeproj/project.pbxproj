@@ -15,6 +15,7 @@
 		1642FAB92B4D6CAA0084F9ED /* 🌐RealityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642FAB82B4D6CAA0084F9ED /* 🌐RealityView.swift */; };
 		165ADB4F2B4B71B0008A756F /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165ADB4E2B4B71B0008A756F /* App.swift */; };
 		165ADB512B4B71B0008A756F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165ADB502B4B71B0008A756F /* ContentView.swift */; };
+		C2A0D4A82F3C9B1A00C0FFEE /* CyberphysAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A0D4A72F3C9B1A00C0FFEE /* CyberphysAuth.swift */; };
 		165ADB532B4B71B2008A756F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 165ADB522B4B71B2008A756F /* Assets.xcassets */; };
 		16688DE62B59F35F004CE12B /* 🥽AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16688DE52B59F35F004CE12B /* 🥽AppModel.swift */; };
 		169D84AF2B5A319500BB5606 /* sound2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 169D84AD2B5A319000BB5606 /* sound2.m4a */; };
@@ -98,6 +99,7 @@
 		165ADB472B4B71B0008A756F /* Tracking Streamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tracking Streamer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		165ADB4E2B4B71B0008A756F /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		165ADB502B4B71B0008A756F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C2A0D4A72F3C9B1A00C0FFEE /* CyberphysAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyberphysAuth.swift; sourceTree = "<group>"; };
 		165ADB522B4B71B2008A756F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		165ADB572B4B71B2008A756F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16688DE52B59F35F004CE12B /* 🥽AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🥽AppModel.swift"; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				C1GRPC032B93C1AC00F2269D /* Proto */,
 				165ADB4E2B4B71B0008A756F /* App.swift */,
 				165ADB502B4B71B0008A756F /* ContentView.swift */,
+				C2A0D4A72F3C9B1A00C0FFEE /* CyberphysAuth.swift */,
 				C1EAFA212EDCF22A00549580 /* OpenCV */,
 				C1EAF9712ED7E66600549580 /* MuJoCo */,
 				C1E05F792ECD850B0018C506 /* ImageData.swift */,
@@ -475,6 +478,7 @@
 				C1C767312EF220010020844F /* SignalingClient.swift in Sources */,
 				C1B6715F2EE68D4000574B6F /* PersonaCaptureController.swift in Sources */,
 				165ADB512B4B71B0008A756F /* ContentView.swift in Sources */,
+				C2A0D4A82F3C9B1A00C0FFEE /* CyberphysAuth.swift in Sources */,
 				16EE5E9B2B576DB000D354ED /* 🧩Model.swift in Sources */,
 				16688DE62B59F35F004CE12B /* 🥽AppModel.swift in Sources */,
 				165ADB4F2B4B71B0008A756F /* App.swift in Sources */,
