@@ -27,7 +27,9 @@ class SignalingClient: ObservableObject {
     private var session: URLSession?
     private var reconnectTask: Task<Void, Never>?
     
-    private let signalingURL = "wss://visionpro-signaling.parkyh9492.workers.dev/ws"
+    // Cyberphys signaling server. This worker returns our coturn (TCP-first) ICE servers so
+    // cross-network WebRTC works reliably from Vast.ai.
+    private let signalingURL = "wss://vp-signaling.cyberneticphysics.com/ws"
     
     // MARK: - Callbacks
     

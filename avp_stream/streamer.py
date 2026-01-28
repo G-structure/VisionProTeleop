@@ -872,7 +872,7 @@ class VisionProStreamer:
               Useful when you want hand positions in the same frame as your MuJoCo scene.
         signaling_url : str, optional
             Custom signaling server URL for cross-network mode.
-            Default: "wss://visionpro-signaling.<your-subdomain>.workers.dev/ws"
+            Default: "wss://vp-signaling.cyberneticphysics.com/ws"
 
         Notes
         -----
@@ -898,7 +898,7 @@ class VisionProStreamer:
         # Determine connection mode based on ip format
         self._cross_network_mode = _is_room_code(ip)
         self._room_code = ip if self._cross_network_mode else None
-        self._signaling_url = signaling_url or "wss://visionpro-signaling.parkyh9492.workers.dev/ws"
+        self._signaling_url = signaling_url or "wss://vp-signaling.cyberneticphysics.com/ws"
         self._signaling_ws = None
         self._signaling_connected = False
         self._peer_ready = False  # Track if VisionOS peer has joined
